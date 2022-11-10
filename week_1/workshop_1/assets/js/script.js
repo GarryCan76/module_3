@@ -33,16 +33,38 @@ function music_shuffle(){
     music_list.push(song_num)
     console.log(music_list + shuffle)
 }
+
+function backward(){
+    if (index !== 0){
+        index = index - 1
+        song_detail = song_index[index]
+        music.src = song_detail.file
+        document.getElementById('song_name').innerHTML = song_detail.title
+        music.play()
+        music_playing = true
+    }
+}
 function forward(){
     if (repeat && index === music_list.length){
         index = -1
-    }else {
+        song_detail = song_index[index]
+        music.src = song_detail.file
+        document.getElementById('song_name').innerHTML = song_detail.title
+        music.play()
+        music_playing = true
+    }else if (index !== music_list.length - 1){
         index = index + 1
+        song_detail = song_index[index]
+        music.src = song_detail.file
+        document.getElementById('song_name').innerHTML = song_detail.title
+        music.play()
+        music_playing = true
     }
 }
 
 function music_play_toggle(){
     if (music_playing === false){
+        document.getElementById('play_toggle').src="../images/pause.png"
         music.play()
         music_playing = true
     }else {

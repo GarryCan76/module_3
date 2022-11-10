@@ -12,14 +12,18 @@
             <audio id="music" src="assets/audio/Purple_Hills.mp3"></audio>
             <img id="music_image" src="assets/images/Garon.png" alt="">
             <h1 id="song_name">Purple Hills</h1>
-            <div id="player_buttons">
-                <div class="play_toggle" onclick="music_play_toggle()"></div>
-                <input id="player" type="range" value="0" maxlength="">
-                <span id="player_span">0</span>
-                <input id="volume_slider" type="range" value="100" maxlength="100" step="2">
-                <span id="volume_span">100</span>
-                <div id="shuffle" onclick="music_shuffle()"></div>
-                <div id="repeat" onclick="repeat = repeat === false"></div>
+            <div class="center_row" id="player_buttons">
+                <img id="play_toggle" onclick="music_play_toggle()" src="assets/images/play.png" alt="">
+                <img onclick="backward()" src="assets/images/backward.png" alt="">
+                <img onclick="forward()" src="assets/images/forward.png" alt="">
+                <div class="center_row" id="time">
+                    <input id="player" type="range" value="0" maxlength="">
+                    <span id="player_span">0</span>
+                    <input id="volume_slider" type="range" value="100" maxlength="100" step="2">
+                    <span id="volume_span">100</span>
+                </div>
+                <img onclick="music_shuffle()" src="assets/images/random.png" alt="">
+                <img onclick="repeat = repeat === false" src="assets/images/repeat.png" alt="">
             </div>
         </div>
         <div id="music_selection">
