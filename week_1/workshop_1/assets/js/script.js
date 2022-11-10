@@ -145,6 +145,5 @@ function main (){
             music_playing = false
             music.pause()
         }
-
     }
 }
