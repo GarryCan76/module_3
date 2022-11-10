@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+<header>
+    <div></div>
+    <div id="login_div">
+        <a href="#">Account</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+    </div>
+
+</header>
+<div id="nav_bar">
+
+    <div id="destinations">
+        <img style="width: 60px; height: 60px" src="../imgs/artworks-000036218988-b4r0um-t500x500.png">
+        <a href="../index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Info</a>
+        <a href="#">Contact</a>
+    </div>
+    <div></div>
+</div>
+<div id="main_div">
+    <div id="container">
+        <form method="get" action="../thanks/index.html">
+            <div class="content_text">
+                <div>
+                    <h2>FILL IN YOUR DATA</h2>
+                    <h3>What should be on the invoice</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>Type of order</p>
+                </div>
+                <div class="right">
+                    <input type="radio" id="particulier" name="bestelling_type" value="particulier">
+                    <label for="particulier">private person</label>
+                    <input type="radio" id="zakelijk" name="bestelling_type" value="zakelijk">
+                    <label for="zakelijk">For Business</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>Salutation</p>
+                </div>
+                <div class="right">
+                    <input type="radio" id="dhr." name="aanhef_type" value="dhr.">
+                    <label for="dhr.">Mr.</label>
+                    <input type="radio" id="mevr." name="aanhef_type" value="mevr.">
+                    <label for="mevr.">Mrs.</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>Name</p>
+                </div>
+                <div class="right">
+                    <input type="text" id="voornaam" name="v_naam" placeholder="First name">
+                    <input style="width: 70px" type="text" id="tussenvoegsel" name="t_naam" placeholder="Intermediate.">
+                    <input type="text" id="achternaam" name="a_naam" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>Postal Code</p>
+                </div>
+                <div class="right">
+                    <input type="text" id="postcode" name="post" placeholder="1234AB">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>House number</p>
+                </div>
+                <div class="right">
+                    <input type="text" id="huisnummer" name="huis_num" placeholder="House number">
+                    <input style="width: 50px" type="text" id="huistoev" name="huis_num" placeholder="Addon.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>Country</p>
+                </div>
+                <div class="right">
+                    <p>The Netherlands</p>
+                    <i style="color: #66C0F4;" class='fas fa-angle-right'></i>
+                    <p style="color: #23A3EE">Have it delivered in Belgium</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p>Delivery address</p>
+                </div>
+                <div class="right">
+                    <input type="radio" id="boven" name="levering_type" value="bovenstaand">
+                    <label for="boven">Deliver to the above address</label>
+                    <input type="radio" id="onder" name="levering_type" value="onderstaand">
+                    <label for="onder">Deliver to another address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>E-mailadres</p>
+                </div>
+                <div class="right">
+                    <input style="width: 300px" type="text" id="email" name="email" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>phone number</p>
+                </div>
+                <div class="right">
+                    <input type="text" id="tel" name="telefoon" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>Date of birth</p>
+                </div>
+                <div class="right">
+                    <input type="text" id="g_datum" name="geboorte" placeholder="mm-dd=jjjj">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>Invoice shipping method</p>
+                </div>
+                <div class="right">
+                    <input type="radio" id="f_email" name="fact_email" value="bovenstaand">
+                    <label for="f_email">Invoice by E-mail</label>
+                    <input type="radio" id="p_email" name="print_email" value="onderstaand">
+                    <label for="p_email">Invoice printed with order</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>Color packaging</p>
+                </div>
+                <div class="right">
+                    <input style="width: 150px" type="color">
+                </div>
+            </div>
+            <div class="content_text">
+                <div>
+                    <h2>SAVE YOUR DATA</h2>
+                    <h3>Handy for next time</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>Password</p>
+                </div>
+                <div class="right">
+                    <input type="password" id="wachtwoord" name="wachtwoord" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                </div>
+                <div class="right">
+                    <p>At least 6 characters <br>make it difficult</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <i class="fa fa-info-circle" style="color: #66C0F4;"></i>
+                    <p>Confirm Password</p>
+                </div>
+                <div class="right">
+                    <input type="password" id="wachtwoord_confirm" name="wachtwoord_confirm" placeholder="">
+                </div>
+            </div>
+            <div id="submit_div">
+                <div id="submit_box">
+                    <input type="submit" id="submit" value="Confirm">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="bottom">
+    <div><h3>Payment</h3>
+        <p>Pay quick and safe</p></div>
+    <div><h3>Delivery Costs</h3>
+        <p>All purchases will be taxed with 15%</p>
+    </div>
+    <div>
+        <h3>Service</h3>
+        <ul>
+            <li><a href="#">Password recovery</a></li>
+            <li><a href="#">Safe payment</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Cancel or return order</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>About us</h3>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact information</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+
+</div>
+<footer>
+    <p>Webstore by &copyJoe Biden</p>
+</footer>
+</body>
+</html>

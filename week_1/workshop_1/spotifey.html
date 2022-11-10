@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neritic</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="main_div">
+    <div class="center_col">
+        <div class="center_col" id="player_main">
+            <audio id="music" src="assets/audio/Purple_Hills.mp3"></audio>
+            <img id="music_image" src="assets/images/Garon.png" alt="">
+            <h1 id="song_name">Purple Hills</h1>
+            <div id="player_buttons">
+                <div class="play_toggle" onclick="music_play_toggle()"></div>
+                <input id="player" type="range" value="0" maxlength="">
+                <span id="player_span">0</span>
+                <input id="volume_slider" type="range" value="100" maxlength="100" step="2">
+                <span id="volume_span">100</span>
+                <div id="shuffle" onclick="music_shuffle()"></div>
+                <div id="repeat" onclick="repeat = repeat === false"></div>
+            </div>
+        </div>
+        <div id="music_selection">
+
+            <div>
+                <div class="music_choice" onclick="music_select(0)"></div>
+                <h2>Purple Hills</h2>
+            </div>
+            <div>
+                <div class="music_choice" onclick="music_select(1)"></div>
+                <h2>Floating corn</h2>
+            </div>
+            <div>
+                <div class="music_choice" onclick="music_select(2)"></div>
+                <h2>Stone Ankle</h2>
+            </div>
+            <div>
+                <div class="music_choice" onclick="music_select(3)"></div>
+                <h2>Lower Shelf</h2>
+            </div>
+            <div>
+                <div class="music_choice" onclick="music_select(4)"></div>
+                <h2>Bat Feet</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

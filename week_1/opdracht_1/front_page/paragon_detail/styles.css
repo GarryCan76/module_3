@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+
+}
+
+body{background-image: linear-gradient(to top ,#1B2838, #2A475E);}
+h1{
+    margin: 5px;
+    color: white;
+}
+h2{
+    margin: 5px;
+    color: #66C0F4;
+}
+h3{
+    color: #66C0F4;
+    margin: 2px;
+}
+p{
+    color: #f1f1f1;
+    margin: 2px;
+}
+header{
+    background-color: #171A21;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+}
+header > div{width: 50%;}
+#nav_bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+}
+
+#nav_bar > div{width: 50%;}
+#nav_bar > div > a{font-size: 30px;}
+
+#destinations{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 800px;
+}
+#main_div > div{
+    background-color: #1B2838;
+    border-radius: 10px;
+}
+#product{
+    border-top: #388DE7 1px solid;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+#product > div{
+    width: 400px;
+}
+.product_listitem{
+    color: white;
+}
+#image_selector{
+    display: flex;
+    flex-direction: row;
+    background-color: #171A21;
+}
+#image_selector > div{
+    border: #2A475E solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+#image_selector > div > input{
+    max-width: 100px;
+    max-height: 100px;
+}
+#product_image{
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../imgs/ParagonShipIcon.png");
+}
+#cart{
+    background-color: #2A475E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 95%;
+    margin: 10px;
+    height: 50px;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    background-color: #171A21;
+}
+#bottom > div{width: 25%;}
+footer{
+    background-color: #171A21;
+    height: 30px;
+}
+a{
+    margin: 10px;
+    font-size: 15px;
+}
+#login_div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+}
+
+a{color: #f1f1f1;}
+
+li{margin: 5px;}
+
+a:link { text-decoration: none; }
+
+a:hover { color: #388DE7 }
