@@ -22,30 +22,29 @@
                     <input id="volume_slider" type="range" value="100" maxlength="100" step="2">
                     <span id="volume_span">100</span>
                 </div>
-                <img onclick="music_shuffle()" src="assets/images/random.png" alt="">
-                <img onclick="repeat = repeat === false" src="assets/images/repeat.png" alt="">
+                <img id="shuffle" onclick="music_shuffle()" src="assets/images/random.png" alt="">
+                <img id="repeat" onclick="repeat_toggle()" src="assets/images/repeat.png" alt="">
             </div>
         </div>
         <div id="music_selection">
-
             <div>
-                <div class="music_choice" onclick="music_select(0)"></div>
+                <img onclick="music_select(0)" src="assets/images/play.png" alt="">
                 <h2>Purple Hills</h2>
             </div>
             <div>
-                <div class="music_choice" onclick="music_select(1)"></div>
+                <img onclick="music_select(1)" src="assets/images/play.png" alt="">
                 <h2>Floating corn</h2>
             </div>
             <div>
-                <div class="music_choice" onclick="music_select(2)"></div>
+                <img onclick="music_select(2)" src="assets/images/play.png" alt="">
                 <h2>Stone Ankle</h2>
             </div>
             <div>
-                <div class="music_choice" onclick="music_select(3)"></div>
+                <img onclick="music_select(3)" src="assets/images/play.png" alt="">
                 <h2>Lower Shelf</h2>
             </div>
             <div>
-                <div class="music_choice" onclick="music_select(4)"></div>
+                <img onclick="music_select(4)" src="assets/images/play.png" alt="">
                 <h2>Bat Feet</h2>
             </div>
         </div>

@@ -21,12 +21,22 @@ volume_slider.oninput = function (){
     volume_span.innerHTML = this.value
     music.volume = this.value / 100
 }
+function repeat_toggle(){
+    repeat = repeat === false
+    if (repeat){
+        document.getElementById('repeat').style.filter="invert(100%)"
+    }else {
+        document.getElementById('repeat').style.filter="invert(0%)"
+    }
+}
 function music_shuffle(){
     shuffle = shuffle === false;
     if (shuffle === true){
         music_list.sort(() => Math.random() - 0.5)
+        document.getElementById('shuffle').style.filter="invert(100%)"
     }else{
         music_list.sort()
+        document.getElementById('shuffle').style.filter="invert(0%)"
     }
     const id = music_list.indexOf(song_num);
     music_list.splice(id, 1);
@@ -42,6 +52,7 @@ function backward(){
         document.getElementById('song_name').innerHTML = song_detail.title
         music.play()
         music_playing = true
+        document.getElementById('play_toggle').src="assets/images/pause.png";
     }
 }
 function forward(){
@@ -52,6 +63,7 @@ function forward(){
         document.getElementById('song_name').innerHTML = song_detail.title
         music.play()
         music_playing = true
+        document.getElementById('play_toggle').src="assets/images/pause.png";
     }else if (index !== music_list.length - 1){
         index = index + 1
         song_detail = song_index[index]
@@ -59,21 +71,24 @@ function forward(){
         document.getElementById('song_name').innerHTML = song_detail.title
         music.play()
         music_playing = true
+        document.getElementById('play_toggle').src="assets/images/pause.png";
     }
 }
 
 function music_play_toggle(){
     if (music_playing === false){
-        document.getElementById('play_toggle').src="../images/pause.png"
         music.play()
         music_playing = true
+        document.getElementById('play_toggle').src="assets/images/pause.png";
     }else {
         music.pause()
         music_playing = false
+        document.getElementById('play_toggle').src="assets/images/play.png";
     }
 }
 
 function music_select(num){
+    document.getElementById('play_toggle').src="assets/images/pause.png";
     const id = music_list.indexOf(num);
     song_num = num
     song_detail = song_index[song_num]
