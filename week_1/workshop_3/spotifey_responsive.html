@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Neritic</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="main_div">
+    <div class="center_col">
+        <div class="center_col" id="player_main">
+            <audio id="music" src="assets/audio/Purple_Hills.mp3"></audio>
+            <img id="music_image" src="assets/images/Garon.png" alt="">
+            <h1 id="song_name">Purple Hills</h1>
+            <div class="center_row" id="player_buttons">
+                <img id="play_toggle" onclick="music_play_toggle()" src="assets/images/play.png" alt="">
+                <img onclick="backward()" src="assets/images/backward.png" alt="">
+                <img onclick="forward()" src="assets/images/forward.png" alt="">
+                <div class="center_row" id="time">
+                    <input id="player" type="range" value="0" maxlength="">
+                    <span id="player_span">0</span>
+                    <img id="volume_icon" onclick="" src="assets/images/volume.png" alt="">
+                    <input id="volume_slider" type="range" value="100" maxlength="100" step="2">
+                    <span id="volume_span">100</span>
+                </div>
+                <img id="shuffle" onclick="music_shuffle()" src="assets/images/random.png" alt="">
+                <img id="repeat" onclick="repeat_toggle()" src="assets/images/repeat.png" alt="">
+            </div>
+        </div>
+        <div id="music_selection">
+            <div>
+                <img onclick="music_select(0)" src="assets/images/play.png" alt="">
+                <h2>Purple Hills</h2>
+            </div>
+            <div>
+                <img onclick="music_select(1)" src="assets/images/play.png" alt="">
+                <h2>Floating corn</h2>
+            </div>
+            <div>
+                <img onclick="music_select(2)" src="assets/images/play.png" alt="">
+                <h2>Stone Ankle</h2>
+            </div>
+            <div>
+                <img onclick="music_select(3)" src="assets/images/play.png" alt="">
+                <h2>Lower Shelf</h2>
+            </div>
+            <div>
+                <img onclick="music_select(4)" src="assets/images/play.png" alt="">
+                <h2>Bat Feet</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
