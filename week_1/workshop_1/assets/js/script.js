@@ -95,7 +95,7 @@ function music_select(num){
     song_detail = song_index[song_num]
     music.src = song_detail.file
     console.log(shuffle)
-    if (shuffle){``
+    if (shuffle){
         index = -1
         music_list.splice(id, 1);
         music_list.push(song_num)

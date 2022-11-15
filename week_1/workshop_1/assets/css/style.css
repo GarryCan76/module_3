@@ -1,8 +1,8 @@
 body{
     margin: 0;
     background-image: linear-gradient(royalblue, darkblue);
+    height: 100%;
 }
-
 #main_div{
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ body{
 #main_div > div{
     min-width: 50%;
     max-width: 500px;
-    height: 90%;
+    height: 100%;
     background-color: gray;
 }
 .center_col{
