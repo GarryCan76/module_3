@@ -5,7 +5,7 @@ let music_playing = false;
 let music = document.getElementById("music");
 let player = document.getElementById("player");
 let volume_slider = document.getElementById('volume_slider');
-let song_num;
+let song_num = 0
 let music_list = [0, 1, 2, 3, 4];
 let index = 0;
 let shuffle = false;
@@ -17,6 +17,7 @@ const song_index = [
     {"file":'assets/audio/Stone_Ankle.mp3', "title":"Stone Ankle"},
     {"file":'assets/audio/Lower_Shelf.mp3', "title":"Lower Shelf"},
     {"file":'assets/audio/Bat_Feet.mp3', "title":"Bat Feet"}]
+song_detail = song_index[song_num]
 volume_slider.oninput = function (){
     volume_span.innerHTML = this.value
     music.volume = this.value / 100
@@ -112,6 +113,7 @@ player.oninput = function (){
 }
 maininterval = setInterval(main,200)
 function main (){
+    document.getElementById('title').innerHTML = "Neritic-playing: " + song_detail.title
     player.max = music.duration
     current_sec = music.currentTime
     duration_min = parseInt(music.duration / 60)
