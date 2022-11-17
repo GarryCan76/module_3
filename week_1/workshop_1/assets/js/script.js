@@ -58,6 +58,7 @@ function backward(){
 }
 function forward(){
     if (repeat && index === music_list.length){
+        song_detail = song_index[song_num]
         index = -1
         song_detail = song_index[index]
         music.src = song_detail.file
@@ -113,7 +114,6 @@ player.oninput = function (){
 }
 maininterval = setInterval(main,200)
 function main (){
-    document.getElementById('title').innerHTML = "Neritic-playing: " + song_detail.title
     player.max = music.duration
     current_sec = music.currentTime
     duration_min = parseInt(music.duration / 60)
